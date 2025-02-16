@@ -1,0 +1,15 @@
+spring:
+  profiles: prod
+  application:
+    name: prod
+  datasource:
+    url: jdbc:postgresql://localhost:5432/proddb
+    username: postgredProd
+    password: postgresProd
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: update
+  h2:
+    console:
+      enabled: true

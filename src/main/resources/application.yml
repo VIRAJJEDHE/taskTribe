@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: test
+welcome:
+  message: Hello, Welcome to TaskFriends
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env"

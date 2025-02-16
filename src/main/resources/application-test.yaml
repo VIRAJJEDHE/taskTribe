@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  application:
+    name: test
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: update
+  h2:
+    console:
+      enabled: true
