@@ -7,6 +7,8 @@ import com.tasktribe.entity.User;
 public interface UserService {
     User registerUser(User user);
 
+    Boolean login(User user);
+
     List<User> getUsers();
 
     User getUserById(Long Id);
